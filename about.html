@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">BM</div>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="purchase.html">HOW TO PURCHASE?</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Me</h1>
+    </section>
+
+    <!--------- about us content --------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <img src="images/foto minha.jpg" alt="Sobre mim">
+            </div>
+            <div class="about-col">
+                <h1>SOBRE MIM</h1>
+                <p> Meu trabalho fotográfico busca transformar ambientes em experiências únicas. Cada imagem é pensada para dialogar com o espaço, despertando sensaçoes que vão da calma á inspiracao. Acredito que acredito que a fotografia não é apenas decoração, mas uma forma de arte viva que torna cada ambiente mais significativo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--------- footer --------->
+
+    <section class="footer">
+        <p>© 2025 Betina Marinho – Fine Art Photography</p>
+    </section>
+
+    <!--------- JavaScript --------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+</html>

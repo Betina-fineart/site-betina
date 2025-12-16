@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">BM</div>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="purchase.html">HOW TO PURCHASE?</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>HOW TO PURCHASE?</h1>
+    </section>
+
+<!--------- Como comprar --------->
+
+<section class="course">
+        <h1>Como comprar</h1>
+        <p> Entre em contato e descubra como uma fotografia pode mudar a atmosfera do seu espaço. 
+            <br>Envie uma mensagem ou entre em contato pelo 
+            <br> e-mail:photoswithbe@gmail.com </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>1- Escolha sua fotografia favorita e visualize como ela ficaria com moldura no seu espaço.</h3>
+            </div>
+            <div class="course-col">
+                <h3>2- Selecione o tamanho, acabamento e tipo de moldura desejados.</h3>
+            </div>
+            <div class="course-col">
+                <h3>3- Confirme sua escolha e envie seus dados para pagamento.</h3>
+            </div>
+            <div class="course-col">
+                <h3>4- Receba sua obra em casa, embalada com autenticidade e certificado de originalidade.</h3>
+            </div>
+        </div>
+        <div class="about-col">
+            <h1>Informações adicionais</h1>
+            <p> Na compra do print (sem moldura), recomenda-se que as obras passem pelo processo de adesivagem em superfície rígida (foamboard ou alumínio) feito por profissional especializado, e só após tal procedimento sejam colocadas na moldura. Recomendamos também que haja um pequeno espaçamento entre a obra impressa e o vidro para que ela não absorva umidade exterior ao quadro (montagem conservação com baguete).</p>
+        </div>
+</section>
+
+<!--------- footer --------->
+
+    <section class="footer">
+        <p>© 2025 Betina Marinho – Fine Art Photography</p>
+    </section>
+
+<!--------- JavaScript --------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">BM</div>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="purchase.html">HOW TO PURCHASE?</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-list" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Betina Marinho</h1>
+            <p>Bem-vindo(a) ao meu site, aqui você encontra minhas coleções de fotos feitas com muito amor</p>
+        </div>
+    </section>
+
+<!--------- campus --------->
+
+    <section class="campus">
+    <h1>Coleções disponíveis</h1>
+
+    <div class="row">
+        <a href="colecao1.html" class="campus-link">
+            <div class="campus-col">
+                <img src="images/mar.jpg">
+                <div class="layer">
+                    <h3>Entre Natureza e Memória</h3>
+                </div>
+            </div>
+        </a>
+        
+        <a href="colecao2.html" class="campus-link">
+            <div class="campus-col">
+                <img src="images/fiorario.jpeg">
+                <div class="layer">
+                    <h3>Fragmentos da cidade</h3>
+                </div>
+            </div>
+        </a>    
+
+        <a href="colecao3.html" class="campus-link">
+            <div class="campus-col">
+                <img src="images/silencio em pretoe branco.jpeg">
+                <div class="layer">
+                    <h3>Entre Natureza e Memória</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!--------- testimonials --------->
+
+    <section class="testimonials">
+        <h1>Depoimentos de Clientes</h1>
+        <p>“Cada  olhar carrega uma história. Essas são algumas das experiêcias de quem permitiu que a arte transformasse o seu espaço.”</p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/pauline.jpg">
+                <div>
+                    <p>“As fotografias da Betina transformaram o ambiente da minha clinica, cada imagem transmite uma paz única.”</p>
+                    <h3>Francisca Soares, Ortodontista</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/sophia.jpg">
+                <div>
+                    <p>“A sensilibidade do olhar da artista faz com que cada foto dialogue com a alma. É arte que inspira.”</p>
+                    <h3>Sophia Santos, Artista Plástica</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/helena.jpg">
+                <div>
+                    <p>“O equilibrio entre luz, forma e emoção nas fotos da Betina tornou meu projeto muito mais expressivo”</p>
+                    <h3>Helena Duarte, Arquiteta</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--------- footer --------->    
+
+    <section class="footer">
+        <p>© 2025 Betina Marinho – Fine Art Photography</p>
+    </section>
+
+<!--------- JavaScript --------->    
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

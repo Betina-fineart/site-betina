@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <div class="logo">BM</div>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="purchase.html">HOW TO PURCHASE?</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Memórias do Horizonte</h1>
+        <p>Memórias do Horizonte nasce da distância, de olhares que atravessam o  tempo e a luz. Entre muros, viagens e silêncios, cada imagem guarda um fragmento de lembrança, uma paisagem que permanece viva na memória.</p>
+    </section>
+
+
+<section class="gallery">
+    <div class="row gallery-grid">
+        <img src="images/viela de pedra.jpeg">
+        <img src="images/fiorario.jpeg">
+        <img src="images/tendas azuis e brancas.jpeg">
+        <img src="images/IMG_5979.jpeg">
+    </div>
+</section>
+
+<!--------- box comment --------->
+
+<section class="blog-content">
+    <div class="comment-box">
+
+        <h3>Leave a comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your comment"></textarea>
+        <button type="submit" class="button color">POST COMMENT</button>
+        </form>
+    </div>
+</section>
+
+<!--------- footer --------->
+
+<section class="footer">
+    <p>© 2025 Betina Marinho – Fine Art Photography</p>
+</section>
+
+<!--------- JavaScript --------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
