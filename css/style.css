@@ -476,8 +476,8 @@ h3, p{
 
 .about-us .row {
     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+    justify-content: ;
+    align-items:flex-start; 
 }
 
 .about-col {
