@@ -1,16 +1,20 @@
+/*--------- header -----------*/
+
 *{
     margin: 0;
     padding: 0;
 }
+
 .logo {
     font-size: 30px;
     font-weight: bold;
     color: #faf7f3;
 }
+
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/caminho\ de\ ciprestes.jpeg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/caminho\ de\ ciprestes.jpeg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -76,7 +80,7 @@ nav img{
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 20px;
+    font-size: 14px;
     color:  #faf7f3;
 }
 
@@ -444,7 +448,7 @@ h3, p{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7)), url(../images/entre\ muros\ e\ verde.jpeg);
+    background-image: linear-gradient(rgba(4,9,30,0.7)), url(images/entre\ muros\ e\ verde.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -461,8 +465,8 @@ h3, p{
 
 .row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: ;
+    align-items:flex-end;
 }
 
 /*------------ about us page -------------*/
@@ -476,8 +480,8 @@ h3, p{
 
 .about-us .row {
     display: flex;
-    justify-content: ;
-    align-items:flex-start; 
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .about-col {
